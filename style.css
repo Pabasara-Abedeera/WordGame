@@ -1,68 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-body{
-    display: flex;
-    padding: 0 10px;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-image: url("https://thumbs.dreamstime.com/b/curriculum-word-cloud-curriculum-word-cloud-education-business-concept-206259834.jpg"); 
-     background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+
+body {
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://cdn.w600.comps.canstockphoto.com/business-words-cloud-wallpaper-or-stock-photos_csp56321633.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 207, 142, 0.8);
+  z-index: -1;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  min-height: 460px;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0, 0.5);
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  text-shadow: #1fa9b5 3px 1px;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.links a {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  padding: 30px 30px;
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: #635e57 0px 1px 5px;
+}
+
+.links a:hover {
+  box-shadow: #eb8b0e 2px 2px 18px;
+}
+
+.guess {
+  background-color: #1fa9b5;
+}
+
+.scramble {
+  background-color: #5e79bd;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.5) to control the darkness */
-    z-index: -1; /* Place the overlay behind the background image */
-  }
-  .wrapper{
-    width: 600px;
-    height: 500px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(255,255,255,0.5);
-  }
-  
-  h1 {
-    text-align: center;
-    padding: 20px;
-    text-shadow: #1fa9b5 3px 1px;
-    letter-spacing: 10px;
-    font-size: 40px;
-  }
-  
-  .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
+    max-width: none;
   }
   
   .links a {
-    font-size: 20px;
-    display: block;
-    width: 350px;
-    padding: 30px 30px;
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: #635e57 0px 1px 5px;
+    width: 100%;
+    max-width: none;
   }
-  
-.links a:hover{
-    box-shadow: #eb8b0e 2px 2px 18px;
-}
-.guess{
-    background-color: #1fa9b5;
-}
-.scramble{
-    background-color: #5e79bd;
 }
